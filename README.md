@@ -117,6 +117,16 @@ bird_detail_interval: 2      # fetch BIRD details every Nth heartbeat tick
 | `bird_detail_interval` | `2` | Fetch BIRD details every Nth heartbeat tick |
 | `store_path` | `/var/lib/autopeer-agent/peers.db` | BoltDB database path (set in main.go) |
 
+## Documentation
+
+In-depth guides live in [`./docs/`](./docs/README.md):
+
+- [Getting started](./docs/getting-started.md) — install on a node and connect it to a center
+- [Configuration](./docs/configuration.md) — every config field, with defaults
+- [Architecture](./docs/architecture.md) — startup flow, packages, and internals
+- [WebSocket protocol](./docs/protocol.md) — message types and the encryption handshake
+- [Operations](./docs/operations.md) — systemd, BIRD/WireGuard setup, OTA updates, and troubleshooting
+
 ## Development
 
 ```bash

@@ -69,6 +69,12 @@ The agent requires root (or CAP_NET_ADMIN) on a Linux host with:
 - BIRD2 running with a `dnpeers` template defined and the peer config directory included
 - `/var/lib/autopeer-agent/` writable (created automatically at startup)
 
+## Documentation
+
+In-depth docs live in [`docs/`](docs/README.md): `getting-started.md`, `configuration.md`, `architecture.md`, `protocol.md`, and `operations.md`. They are written directly from the source and are the primary reference for operators running the agent.
+
+**Keep them in sync with the code.** When you change the config schema (`internal/config/`), the WebSocket message protocol or handshake (`internal/handler/`, `internal/ws/`, `internal/crypto/`), the interface-naming rules, the OTA update flow, or the runtime requirements, update the matching guide under `docs/` (and `config.example.yaml` for new config fields) in the same change.
+
 ## Pull Request Workflow
 
 This repository follows a feature-branch + Pull Request workflow on GitHub:
