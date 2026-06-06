@@ -1,0 +1,21 @@
+# ── Secrets & local config ──────────────────────────────────────────────────
+.env
+config.yaml
+*.local.yaml
+
+# ── Key material ────────────────────────────────────────────────────────────
+*.key
+*.pem
+
+# ── BoltDB / local state ────────────────────────────────────────────────────
+*.db
+peers.db
+
+# ── Compiled binaries / build output ────────────────────────────────────────
+autopeer-agent
+autopeer-agent-linux-*
+*.exe
+/dist/
+
+# ── OS / editor ─────────────────────────────────────────────────────────────
+.DS_Store

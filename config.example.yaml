@@ -1,0 +1,18 @@
+# Autopeer Agent Configuration
+center_url: "wss://your-center.example.com"
+agent_token: "your-agent-token-here"
+node_id: "your-node-uuid-here"
+
+# Paths
+bird_peer_dir: "/etc/bird/dn42/peer/"
+wg_dir: "/etc/wireguard/"
+birdc_path: "/usr/sbin/birdc"
+
+# Network identity
+our_asn: 4242420000
+our_lla: "fe80::1"
+our_wg_private_key: "your-wireguard-private-key-here"
+
+# Intervals (seconds)
+heartbeat_interval: 60
+reconnect_max_interval: 60

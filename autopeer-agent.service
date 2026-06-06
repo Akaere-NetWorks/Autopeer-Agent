@@ -1,0 +1,15 @@
+[Unit]
+Description=Autopeer DN42 Peering Agent
+After=network-online.target bird.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/autopeer-agent -config /etc/autopeer-agent/config.yaml
+Restart=always
+RestartSec=5
+User=root
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
